@@ -1,0 +1,24 @@
+open ravlow.esy.es
+u337206995
+alex12121997
+
+prompt
+
+bin
+
+lcd backup
+
+cd jogo
+
+mget game.js index.html style.css
+
+lcd ..\..
+
+mput game.js index.html style.css
+
+bye
+
+
+
+
+

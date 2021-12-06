@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #8AD9F5;
+    text-align: center;
+    margin: 5px;
+    font-family: "comic sans ms";    
+    border-radius: 5px;
+    background-color: rgba(0, 171, 139, 0.43);
+    border: 2px solid rgba(211, 255, 230, 0.23);
+}
+
+#wrapper {
+    position: relative;
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #90D3D1;
+    background-size: 100% 100%;
+    background-image: url(imagens/background.jpg);
+    border-radius: 10px;
+}
+
+#histmovimentos span {
+    font-weight: normal;
+}
+
+#opcoes button {
+    display: none;
+    margin: 0;
+    width: 100%;
+}
+
+#histmovimentos {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+#venceu {
+    font-weight: bold;
+    font-size: 23px;
+    color: #DBFF00;
+    text-align: center;
+    margin-bottom: 10px;
+    display: none;
+    font-family: "comic sans ms";
+}
+
+#info1 {
+    float: left;
+    width: 189px;
+}
+
+#info2 {
+    float: right;
+    width: 189px;
+}
+
+#opcoes div > div, #opcoes div > button {
+    color: #8AD9F5;
+    background-color: rgba(0, 0, 0, 0.27);
+    border: 2px solid rgba(0, 0, 0, 0.09);
+    padding: 5px 0;
+    font-weight: bold;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    width: 100%;
+}
+
+#opcoes div > p {
+    color: #8AD9F5;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bloco {
+    border-radius: 5px;
+    padding: 17px;
+    height: 296px;
+    display: block;
+    background-color: rgba(0, 171, 139, 0.43);
+    margin: 5px;
+    box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.86);
+    border: 2px solid rgba(211, 255, 230, 0.23);
+}
+
+fieldset {
+    border: 1px solid #8AD9F5;
+}
+
+#inicio .bloco{
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 133px;
+    font-weight: bold;
+    color: #8AD9F5;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bloco select, .bloco button {
+    font-weight: bold;
+    color: #8AD9F5;
+    background-color: rgba(0, 0, 0, 0.27);
+    border: 2px solid rgba(0, 0, 0, 0.09);
+    width: 100%;
+    margin: 5px 0;
+}
+
+select {
+    color: #fff;
+}
+
+select option {
+    background-color: rgba(0, 111, 95, 0.71);
+}
+
+#milisegundo {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.bloco button {
+    font-weight: bold;
+    color: #8AD9F5;
+    background-color: rgba(0, 0, 0, 0.27);
+    border: 2px solid rgba(0, 0, 0, 0.09);
+    width: 100px;
+    margin: 5px 0px 5px 95px;
+}
+
+#game {
+    display: none;
+}
+
+#container {
+    font-weight: bold;
+    text-align: center;
+    width: 422px;
+    left: 10px;
+    position: absolute;
+} 
+
+#opcoes {
+    width: 189px;
+    right: 10px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.box {
+	background-color: rgba(0, 0, 0, 0.27);
+	width: 60px;
+	height: 50px;
+	display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.innerbox {
+    height: 100%;
+	background-color: #8AD9F5;
+	color: rgba(0, 119, 83, 0.84);
+    font-size: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buraco > .innerbox {
+	visibility: hidden;
+}

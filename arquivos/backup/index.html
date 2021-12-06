@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">	
+	<head>		
+		<meta charset="utf-8" />
+		<title>Game</title>
+		<script src="jquery-2.0.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/jscript" src="game.js"></script>
+	</head>	
+	<body>   
+        <div id="wrapper">  
+            <!-- Janela de inicio de jogo -->
+            <div id="inicio">
+                <div class="bloco">
+                    <form>
+                        <div id="instrucao">Utilize as setas do teclado para jogar.</div>                   
+                        <label for="dificuldade">Tipo de jogo</label>
+                        <select name="dificuldade" id="dificuldade">
+                            <option value="0">Facíl</option>
+                            <option value="1">Médio</option>
+                            <option value="2">Dificil</option>
+                            <option value="3">Expert</option>
+                        </select>
+                    </form>
+                    <button id="play">Jogar</button>              
+                </div>
+            </div>
+            
+            <!-- Wrapper game -->
+            <div id="game">                
+                <span id="number"></span>                
+                <h1>PUZZLE</h1>                
+                
+                <!-- Game -->
+                <div class="bloco" id="container"></div>                
+                
+                <div class="bloco" id="opcoes">                     
+                    <div id ="venceu">Parabéns<br />Você venceu!</div>                    
+                    <div id="info1">                        
+                        <p>Tempo:</p>                        
+                        <div id="tempo"></div>                        
+                        <p>Movimentos:</p>                        
+                        <div id="movimentos"></div>                         
+                    </div>                    
+                    <div id="info2">                        
+                        <p>Hist. Movimentos:</p>
+                        <div id="histmovimentos"></div>                        
+                    </div>                      
+                    <button>Jogar Novamente</button>                    
+                </div>                 
+            </div>
+        </div>
+        <div id="audio">                
+            <audio id="plim" preload="auto">
+                <source src="audio/plim.mp3" type="audio/mpeg">
+                <source src="audio/plim.ogg" type="audio/ogg">
+                <source src="audio/plim.wav" type="audio/wav">
+                O navegador não suporta o elemento audio.
+            </audio>            
+            <audio id="fim" preload="auto">
+                <source src="audio/fim.mp3" type="audio/mpeg">
+                <source src="audio/fim.ogg" type="audio/ogg">
+                <source src="audio/fim.wav" type="audio/wav">
+                O navegador não suporta o elemento audio.
+            </audio>            
+            <audio id="music"  preload="auto" loop>
+                <source src="audio/music.mp3" type="audio/mpeg">
+                <source src="audio/music.ogg" type="audio/ogg">
+                <source src="audio/music.wav" type="audio/wav">
+                O navegador não suporta o elemento audio.
+            </audio>
+        </div>		
+	</body>
+</html>
